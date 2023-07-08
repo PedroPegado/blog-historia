@@ -1,0 +1,116 @@
+@font-face {
+    font-family: font-texto;
+    src: url("../fonts/Raleway-Medium.otf");
+}
+
+body {
+    margin: 0 auto;
+}
+
+.hero {
+    display: flex;
+    background-image: url("../images/background.jpg");
+    width: 1440px;
+    height: 1024px;
+}
+
+.caixa-titulo {
+    width: 705px;
+    height: 924px;
+    background-color: #F9B333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    width: 705px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+
+.titulo h1 {
+    font-family: font-texto;
+    font-size: 59px;
+    color: #635132;
+}
+
+.titulo p {
+    font-family: font-texto;
+    font-size: 22px;
+    color: #635132;
+}
+
+.hist {
+    color: #3d321e;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9B333;
+    width: 1440px;
+    height: 70px;
+}
+
+.div-logo {
+    width: 990px;
+    height: 100px; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.elementos-nav {
+    width: 990px;
+    height: 100px; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.elementos-nav li{
+    display: inline-block;
+    font-size: 20px;
+    font-family: font-texto;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+}
+
+.elementos-nav li:hover {
+    font-size: 25px;
+    transition-duration: 1s;
+}
+
+.elementos-nav-espaco ul{
+    width: 330px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+#logo {
+    width: 80px;
+}
+
+#logo:hover {
+    -xpedu-transform: rotatez(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg);
+    transition-duration: 1s;
+}
