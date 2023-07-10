@@ -19,7 +19,7 @@ body {
 .hero {
     display: flex;
     background-image: url("../images/background.jpg");
-    width: 1440px;
+    min-width: 1440px;
     height: 954px;
 }
 
@@ -63,7 +63,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #F9B333;
-    width: 1440px;
+    min-width: 1440px;
     height: 70px;
     z-index: 2;
 }
@@ -133,12 +133,12 @@ a:visited {
 }
 
 .tudo {
-    width: 1440px;
+    min-width: 1440px;
     min-height: 2048px;
 }
 
 .pag1 {
-    width: 1440px;
+    min-width: 1440px;
     min-height: 1024px;
     background-image: linear-gradient(315deg, #1e1e1e 10%, #101010 90%);
 }
@@ -226,7 +226,7 @@ background-color: #dd8e18;
 }
 
 .pag2 {
-    width: 1440px;
+    min-width: 1440px;
     min-height: 1024px;
     background-image: linear-gradient(225deg, #1e1e1e 10%, #101010 90%);
 }
@@ -359,7 +359,7 @@ footer {
 footer .rodape {
     background-color: #F9B333;
     min-height: 350px;
-    width: 1440px;
+    min-width: 1440px;
     color: white;
     display: flex;
     flex-wrap: nowrap;
