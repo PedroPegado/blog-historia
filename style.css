@@ -1,6 +1,6 @@
 @font-face {
     font-family: font-texto;
-    src: url("../fonts/Raleway-Medium.otf");
+    src: url("/fonts/Raleway-Medium.otf");
 }
 
 html {
@@ -14,7 +14,7 @@ body {
 
 .hero {
     display: flex;
-    background-image: url("../images/background.jpg");
+    background-image: url("/images/background.jpg");
     width: 1440px;
     height: 954px;
 }
@@ -217,7 +217,7 @@ background-color: #3d321e;
 .pag2 {
     width: 1440px;
     height: 1024px;
-    background-image: linear-gradient(315deg, #F9B333 30%, #e29810 73%);
+    background-image: linear-gradient(225deg, #1e1e1e 10%, #101010 90%);
 }
 
 .titulo-pag2 {
