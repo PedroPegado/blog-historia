@@ -3,6 +3,10 @@
     src: url("../fonts/Raleway-Medium.otf");
 }
 
+* {
+    font-family: font-texto;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -87,11 +91,11 @@ body {
     border-radius: 20px;
     padding: 10px;
     color: white;
+    transition: all .5s;
 }
 
 .elementos-nav li:hover {
     font-size: 25px;
-    transition-duration: 0.5s;
 }
 
 .elementos-nav-espaco ul{
@@ -103,6 +107,7 @@ body {
 }
 
 a {
+    color: white;
     text-decoration: none;
 }
 
@@ -203,20 +208,20 @@ cursor: pointer;
 font-family: font-texto;
 color: white;
 border-radius: 10px;
+transition: all .5s;
 }
 
 .carousel-titles button.active {
-background-color: #3d321e;
+background-color: #dd8e18;
 }
 
 .carousel-titles button:hover {
     font-size: 20px;
-    transition-duration: 0.5s;
 }
 
 .pag2 {
     width: 1440px;
-    height: 1024px;
+    height: 2200px;
     background-image: linear-gradient(225deg, #1e1e1e 10%, #101010 90%);
 }
 
@@ -237,6 +242,102 @@ background-color: #3d321e;
 .titulo-pag2 h1{
     font-family: font-texto;
     font-size: 50px;
-    color: white;
+    color: #F9B333;
     text-align: center;
+}
+
+.artigos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-texto {
+    background-image: linear-gradient(225deg, #ffd68b 14%, #f9b333 50%, #eca41f 93%);
+    overflow: hidden;
+    border-radius: 16px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 20px;
+    max-width: 500px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .5s;
+    box-shadow: rgba(255,214,139,0.3) 0px 5px 15px;
+}
+
+
+.card-texto:hover {
+    background-image: linear-gradient(225deg, #e39a2d 15%, #dd8e18 47%, #d48208 93%);
+}
+
+.card-texto .img{
+    background-image: url("https://static.todamateria.com.br/upload/56/63/5663201a85f64-tragedia-grega.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.85;
+    transition: all 1s;
+}
+
+.card-texto:hover .img {
+    opacity: 1;
+    width: 550px;
+}
+
+.artigos .img span {
+    font-size: 24px;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card-texto .content {
+    padding: 0px 20px;
+    overflow: hidden;
+    height: 0;
+    transition: all 1s;
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+.card-texto:hover .content{
+    padding: 20px;
+    height: 450px;
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.card-texto .content .title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card-texto .content p {
+    margin-bottom: 0;
+}
+
+.card-texto .content .desc {
+    font-size: 14px;
+    font-weight: 100;
+    opacity: .7;
+}
+
+.card-texto .arrow {
+    padding: 15px;
+    font-size: 28px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card-texto:hover .arrow {
+    transform: rotate(0);
 }
