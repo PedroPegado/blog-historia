@@ -1,6 +1,6 @@
 @font-face {
     font-family: font-texto;
-    src: url("/fonts/Raleway-Medium.otf");
+    src: url("../fonts/Raleway-Medium.otf");
 }
 
 html {
@@ -14,7 +14,7 @@ body {
 
 .hero {
     display: flex;
-    background-image: url("/images/background.jpg");
+    background-image: url("../images/background.jpg");
     width: 1440px;
     height: 954px;
 }
@@ -240,4 +240,3 @@ background-color: #3d321e;
     color: white;
     text-align: center;
 }
-
