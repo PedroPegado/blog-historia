@@ -21,6 +21,7 @@ body {
     background-image: url("../images/background.jpg");
     min-width: 1440px;
     height: 954px;
+    background-size: cover;
 }
 
 .caixa-titulo {
@@ -141,6 +142,10 @@ a:visited {
     min-width: 1440px;
     min-height: 1024px;
     background-image: linear-gradient(315deg, #1e1e1e 10%, #101010 90%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .titulo-pag1 {
@@ -229,6 +234,10 @@ background-color: #dd8e18;
     min-width: 1440px;
     min-height: 1024px;
     background-image: linear-gradient(225deg, #1e1e1e 10%, #101010 90%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .titulo-pag2 {
@@ -265,7 +274,6 @@ background-color: #dd8e18;
     border-radius: 16px;
     margin-right: 50px;
     margin-left: 50px;
-    margin-top: 10px;
     margin-bottom: 30px;
     max-width: 500px;
     color: white;
@@ -276,6 +284,8 @@ background-color: #dd8e18;
     cursor: pointer;
     transition: all .5s;
     box-shadow: rgba(255,214,139,0.3) 0px 5px 15px;
+    position: relative;
+    bottom: 40px;
 }
 
 
@@ -284,7 +294,7 @@ background-color: #dd8e18;
 }
 
 .card-texto .img{
-    background-image: url("https://static.todamateria.com.br/upload/56/63/5663201a85f64-tragedia-grega.jpg");
+    background-image: url("../images/comedia.jpg");
     background-position: center;
     background-size: cover;
     width: 500px;
@@ -294,6 +304,18 @@ background-color: #dd8e18;
     justify-content: center;
     opacity: 0.85;
     transition: all 1s;
+}
+
+#texto1 {
+    background-image: url("../images/tragediaAtual.jpg");
+}
+
+#texto3 {
+    background-image: url("../images/tragediaAnt.jpg");
+}
+
+#texto4 {
+    background-image: url("../images/populacao.jpg");
 }
 
 .card-texto:hover .img {
@@ -319,9 +341,17 @@ background-color: #dd8e18;
 
 .card-texto:hover .content{
     padding: 20px;
-    height: 450px;
+    height: 180px;
     transform: translateY(0px);
     opacity: 1;
+}
+
+#t4:hover .content{
+    height: 420px;
+}
+
+#t1:hover .content{
+    height: 780px;
 }
 
 .card-texto .content .title {
@@ -360,14 +390,52 @@ footer .rodape {
     background-color: #F9B333;
     min-height: 350px;
     min-width: 1440px;
+    width: 100%;
     color: white;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: baseline;
+    
 }
 
 .rodape .fontes, .alunos, .sobre{
     position: relative;
-    top: 100px;
+    top: 50px;
+}
+
+.rodape li {
+    list-style: none;
+    margin-top: 10px;
+    position: relative;
+    right: 40px;
+}
+
+.rodape p {
+    width: 500px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+footer a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #dd8e18;
+    transition: width 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    a:hover::before{
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
 }
